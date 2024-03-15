@@ -53,6 +53,7 @@ public class InterviewController {
 
 	@RequestMapping(value = "/")
 	public String welcomePage(Model model) {
+		System.out.println("welcome page");
 		model.addAttribute("command", new InterviewDetails());
 		return "welcome";
 	}
